@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // Add the line below. This is the fix for the blank screen.
+      base: '/Family-Wealth-Architect/', 
       server: {
         port: 3000,
         host: '0.0.0.0',
